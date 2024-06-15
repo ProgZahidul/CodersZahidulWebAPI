@@ -12,5 +12,12 @@ namespace CodersZahidulWebAPI.Models
 
         [Required(ErrorMessage = "password is required")]
         public string Password { get; set; }
+        [Required]
+        public string Name { get; set; }
+
+        public string? Address { get; set; }
+        public string? City { get; set; }
+        public string? PostalCode { get; set; }
+        public string? Role { get; set; }
     }
 }
